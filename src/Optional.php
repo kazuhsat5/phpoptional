@@ -99,7 +99,7 @@ final class Optional
      * get
      *
      * @return mixed
-     * @throw NoSuchElementException
+     * @throws NoSuchElementException
      */
     public function get()
     {
@@ -162,7 +162,7 @@ final class Optional
      *
      * @param mixed $value
      * @return Optional
-     * @throw NullPointerException
+     * @throws NullPointerException
      */
     public static function of($value) : Optional
     {
@@ -211,7 +211,7 @@ final class Optional
      *
      * @param Throwable $exception
      * @return mixed
-     * @throw Throwable
+     * @throws Throwable
      */
     public function orElseThrow(Throwable $exception)
     {
